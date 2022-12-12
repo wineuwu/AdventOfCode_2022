@@ -1,8 +1,12 @@
-import calorieCounter from '/day1/calorieCounting'
+import {  sumOfCals,  sumOfFirstThree } from '/day1/calorieCounting'
 
  // day1
- calorieCounter();
- 
+  let findSumOfMax = Math.max(...sumOfCals());
+  let total = sumOfFirstThree().reduce((a, c)=> a+c);
+
+  console.log('total',total)
+  console.log('findSumOfMax', findSumOfMax)
+
 
 
 
