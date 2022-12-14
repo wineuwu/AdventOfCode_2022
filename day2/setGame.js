@@ -11,6 +11,8 @@ function Rule(rock, paper, scissors){
   this[scissors] = {action: "scissors", score : 3 , rock:0 , paper:6 };
 }
 
+
+
 function Rule2(lose, round, win){
   // this[lose] =  0; 
   // this[round] = 3 ;
@@ -38,17 +40,13 @@ const getScore = () => {
 const getActionScore = () => {
   let meScore = 0;
   data.split('\n').map(i=> {
-    
     let opp = opponent[i.split(' ')[0]];
     let result = resultList[i.split(' ')[1]];
-    console.log(result)
-  
     meScore += (result.score + result[opp.action])
-   
     // meScore += (((mee.action === opp.action)? 3 : mee[opp.action])+ mee.score )
   })
 
-  console.log(meScore)
+  console.log("day2",meScore)
   return meScore;
 }
 

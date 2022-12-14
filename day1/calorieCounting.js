@@ -32,8 +32,11 @@ let sumOfFirstThree = () => {
 }
 
 
-export {
-  sumOfCals ,
-  sumOfFirstThree 
+export default () => {
+  let findSumOfMax = Math.max(...sumOfCals());
+  let total = sumOfFirstThree().reduce((a, c)=> a+c);
+
+  console.log('part 1', findSumOfMax)
+  console.log('part 2', total)
 };
 
