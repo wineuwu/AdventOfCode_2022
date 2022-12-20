@@ -8,7 +8,7 @@ import Day5 from './day5/example'
 // Day2();
 // Day3();
 // Day4();
-Day5.part2();
+// Day5.part2();
 
 // console.log(data);
 

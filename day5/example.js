@@ -1,6 +1,6 @@
 import data from './data'
 
-//day 5 part 1
+//part 1
 
 let targets = [
   ['Z', 'N'],
@@ -27,6 +27,8 @@ let part1 = ()=>{
   console.log(str);
 }
 
+//part 2
+
 let part2 = () => { 
   data.rules.split('\n').map(i => {
     let [times, from, to] = i.match(/(\d+)/g).map(Number);
@@ -37,6 +39,7 @@ let part2 = () => {
   let str = data.targets.map(s => s[s.length - 1]).join('')
   console.log(str);
 } 
+
 export default {
   part1,
   part2
